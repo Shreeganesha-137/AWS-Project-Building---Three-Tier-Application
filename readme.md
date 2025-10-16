@@ -1,5 +1,6 @@
 🟠 OrangeHRM Three-Tier AWS Project
 🚀 Deploying OrangeHRM on AWS using LAMP Stack (Linux, Apache, MySQL, PHP)
+
 📘 Project Overview
 
 This project demonstrates how to deploy the open-source OrangeHRM (Human Resource Management System) using a three-tier architecture on AWS Cloud.
@@ -23,21 +24,26 @@ Client (Browser)
   DB Tier (MariaDB/MySQL on RDS or EC2)
 
 🧩 AWS Services Used
+
 Service	Purpose
-EC2	Host the web server and OrangeHRM application
-RDS / EC2 (Private)	Host MariaDB/MySQL database
-VPC	Network isolation with public and private subnets
-Security Groups	Control inbound and outbound traffic
-IAM	Manage permissions and access
-S3 (optional)	Store backups or static assets
+EC2	Host the web server and OrangeHRM application,
+RDS / EC2 (Private)	Host MariaDB/MySQL database,
+VPC	Network isolation with public and private subnets,
+Security Groups	Control inbound and outbound traffic,
+IAM	Manage permissions and access,
+S3 (optional)	Store backups or static assets,
+
 ⚙️ Tech Stack
 Layer	Technology
 OS	Ubuntu 22.04 LTS
 Web Server	Apache2
+
 Backend Language	PHP 7.1
 Database	MariaDB 10.6
+
 Application	OrangeHRM (Open Source)
 🔧 Installation Steps
+
 1️⃣ Launch EC2 Instance
 
 Ubuntu 22.04 LTS
@@ -45,6 +51,7 @@ Ubuntu 22.04 LTS
 Security Group: Allow HTTP (80) and SSH (22)
 
 2️⃣ Install Apache and PHP
+
 sudo apt update -y
 
 sudo apt install apache2 -y
@@ -58,14 +65,21 @@ sudo apt update -y
 sudo apt install php7.1 php7.1-common php7.1-mbstring php7.1-xmlrpc php7.1-soap php7.1-gd php7.1-xml php7.1-intl php7.1-mysql php7.1-cli php7.1-zip php7.1-curl -y
 
 3️⃣ Install MariaDB and Create Database
+
 sudo apt install mariadb-server -y
+
 sudo mysql_secure_installation
 
 sudo mysql -u root -p
+
 CREATE DATABASE orangehrm CHARACTER SET utf8;
+
 CREATE USER 'orangeuser'@'%' IDENTIFIED BY 'orange123';
+
 GRANT ALL PRIVILEGES ON orangehrm.* TO 'orangeuser'@'%';
+
 FLUSH PRIVILEGES;
+
 EXIT;
 
 4️⃣ Clone OrangeHRM Repository
