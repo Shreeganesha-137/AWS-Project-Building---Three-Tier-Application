@@ -55,8 +55,7 @@ date.timezone = America/Chicago
 Clone the repo from the GitHub
 
 
-git clone https://github.com/SHRIDHARMUDASHI/orangehrms.git
-
+git clone https://github.com/Shreeganesha-137/AWS-Project-Building---Three-Tier-Application.git
 cd orangehrms
 
 mv orangehrm-4.0.zip /var/www
