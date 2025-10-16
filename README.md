@@ -83,21 +83,21 @@ vi /etc/apache2/sites-available/orangehrm.conf
 >>>>>> Paste this data in config file
 
 <VirtualHost *:80>
-     ServerAdmin admin@example.com
-     DocumentRoot /var/www/orangehrm
-     ServerName example.com
-     ServerAlias www.example.com
+    ServerAdmin admin@example.com
+    DocumentRoot /var/www/orangehrm
+    ServerName example.com
+    ServerAlias www.example.com
 
-     <Directory /var/www/orangehrm/>
+    <Directory /var/www/orangehrm/>
         Options +FollowSymlinks
         AllowOverride All
         Require all granted
-     </Directory>
+    </Directory>
 
-     ErrorLog ${APACHE_LOG_DIR}/error.log
-     CustomLog ${APACHE_LOG_DIR}/access.log combined
-
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 
 
 
