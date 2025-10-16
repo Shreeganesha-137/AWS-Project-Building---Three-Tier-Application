@@ -1,5 +1,5 @@
->>>>>>>>>>>>>>>>>>.....>🟠 OrangeHRM Three-Tier AWS Project<<<<<<<<<<<<<<<<<<<<<<<
->>>>>>>>>>>>>>>>>>>
+🟠 OrangeHRM Three-Tier AWS Project
+
 🚀 Deploying OrangeHRM on AWS using LAMP Stack (Linux, Apache, MySQL, PHP)
 
 📘 Project Overview
