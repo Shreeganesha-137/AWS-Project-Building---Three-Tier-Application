@@ -5,7 +5,7 @@
 Building a Three Tier Application
 orangehrms
 
-OrangeHRM - Human Resource Management
+OrangeHRM - Human Resource Management,
 Open Source Human Resource Management Software
 
 
