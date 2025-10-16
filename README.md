@@ -80,7 +80,7 @@ chmod -R 755 /var/www/orangehrm/
 
 vi /etc/apache2/sites-available/orangehrm.conf
 
->>>>>> Paste this data in config file
+Paste this data in config file
 
 <VirtualHost *:80>
     ServerAdmin admin@example.com
