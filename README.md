@@ -21,11 +21,17 @@ previously as Personal Home Page. It is a programming language widely used to bu
 
 Installation of Webserver and MariaDB 10.6.20
 apt update
+
 apt install apache2 -y
+
 apt-get install software-properties-common
+
 add-apt-repository ppa:ondrej/php
+
 apt update
+
 apt install php7.1
+
 apt install php7.1 php7.1-common php7.1-mbstring php7.1-xmlrpc php7.1-soap php7.1-gd php7.1-xml php7.1-intl php7.1-mysql php7.1-cli php7.1-mcrypt php7.1-ldap php7.1-zip php7.1-curl 
 
 -----PHP----
@@ -33,9 +39,13 @@ apt install php7.1 php7.1-common php7.1-mbstring php7.1-xmlrpc php7.1-soap php7.
 vi /etc/php/7.1/apache2/php.ini
 
 file_uploads = On
+
 allow_url_fopen = On
+
 memory_limit = 256M
+
 upload_max_filesize = 100M
+
 date.timezone = America/Chicago
 
 -------------------------------------------------------
@@ -46,11 +56,14 @@ Clone the repo from the GitHub
 
 
 git clone https://github.com/SHRIDHARMUDASHI/orangehrms.git
+
 cd orangehrms
+
 mv orangehrm-4.0.zip /var/www
+
 cd /var/www
 
-# if file in zip formate
+-------- if file in zip formate------
 
 apt install unzip
 unzip orangehrm-4.0.zip
@@ -61,10 +74,12 @@ mv orangehrm-4.0 orangehrm
 ----Need to change the Apache2 permission----
 
 chown -R www-data:www-data /var/www/orangehrm/
+
 chmod -R 755 /var/www/orangehrm/
+
 vi /etc/apache2/sites-available/orangehrm.conf
 
-# Paste this data in config file
+>>>>>> Paste this data in config file
 
 <VirtualHost *:80>
      ServerAdmin admin@example.com
@@ -85,7 +100,9 @@ vi /etc/apache2/sites-available/orangehrm.conf
 
 
 a2ensite orangehrm.conf
+
 a2enmod rewrite
+
 systemctl restart apache2.service
 
 
