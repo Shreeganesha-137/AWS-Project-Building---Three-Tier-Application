@@ -65,7 +65,9 @@ cd /var/www
 -------- if file in zip formate------
 
 apt install unzip
+
 unzip orangehrm-4.0.zip
+
 mv orangehrm-4.0 orangehrm
 
 -------------------------------------------------------
@@ -96,6 +98,8 @@ vi /etc/apache2/sites-available/orangehrm.conf
      CustomLog ${APACHE_LOG_DIR}/access.log combined
 
 </VirtualHost>
+
+
 
 
 a2ensite orangehrm.conf
