@@ -128,4 +128,4 @@ sudo a2ensite orangehrm.conf
 sudo a2enmod rewrite
 sudo systemctl restart apache2
 
-*****************After we should add the public/privite IP to (type which database you used) database security group (Inbount rule)
+*****************After we should add the public/privite IP to (type which database you used) database security group (Inbound rule)*******************
